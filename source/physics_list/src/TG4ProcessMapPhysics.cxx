@@ -94,6 +94,7 @@ void TG4ProcessMapPhysics::FillMap()
   pMap->Add(fComptonScattering, kPCompton, kCOMP);                // G4 value: 13
   pMap->Add(fGammaConversion, kPPair, kPAIR);                     // G4 value: 14
   pMap->Add(fGammaConversionToMuMu, kPPair, kPAIR);               // G4 value: 15
+  pMap->Add(fMuonPairProdByCharged, kPPair, kPAIR);               // G4 value: 49
     // Add code
   pMap->Add(fGammaGeneralProcess, kPNull, kNoG3Controls);          // G4 value: 16
   pMap->Add(fPositronGeneralProcess, kPNull, kNoG3Controls);       // G4 value: 17
@@ -120,7 +121,6 @@ void TG4ProcessMapPhysics::FillMap()
 
   // G4HadronicProcessType: 111 - 161; 210; 310
   pMap->Add(fHadronElastic, kPHElastic, kHADR);                    // G4 value: 111
-  pMap->Add(fNeutronGeneral, kPNull, kNoG3Controls);               // G4 value: 116
   pMap->Add(fHadronInelastic, kPHInhelastic, kHADR);               // G4 value: 121
   pMap->Add(fCapture, kPNCapture, kHADR);                          // G4 value: 131
   pMap->Add(fMuAtomicCapture, kPHadronic, kHADR);                  // G4 value: 132
